@@ -1,22 +1,22 @@
 # Embedded Lab Manager
-O aplicație pentru evidența echipamentelor dintr-un laborator, folosită pentru monitorizarea și alocarea pieselor în montaje practice.
+An application for tracking laboratory equipment, used to monitor and allocate components for practical electronic setups.
 
 ## Data model
 Field        | Type         | Notes
-Componentă   | text         | required, max 100 chars
-Alocată      | boolean      | toggled from the list, default false
-Tip          | fixed values | Senzor, Actuator, Afișaj, Microcontroller
-Proiect      | relation     | Seif digital, Asistență parcare, Sistem alarmă
-Utilizator   | relation     | the owner of the item (from week 11)
+Component    | text         | required, max 100 chars
+Allocated    | boolean      | toggled from the list, default false
+Type         | fixed values | Sensor, Actuator, Display, Microcontroller
+Project      | relation     | Digital Safe, Parking Assistant, Alarm System
+User         | relation     | the owner of the item (from week 11)
 
 Sample data used across all stages:
-1. Senzor ultrasonic HC-SR04, active, Senzor
-2. Display LCD I2C, done, Afișaj
-3. Placă Arduino Uno, active, Microcontroller
+1. Ultrasonic Sensor HC-SR04, active, Sensor
+2. I2C LCD Display, done, Display
+3. Arduino Uno Board, active, Microcontroller
 
 ## AI usage
-Tool | Used for
-Gemini | Structurarea fisierului README si generarea codului initial pentru HTML/CSS (Etapa 1).
+Tool   | Used for
+Gemini | Structuring the README file and generating the initial HTML/CSS code (Stage 1).
 
 Details per stage: see the `ai-log/` folder.
 
