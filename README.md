@@ -2,12 +2,13 @@
 An application for tracking laboratory equipment, used to monitor and allocate components for practical electronic setups.
 
 ## Data model
-Field        | Type         | Notes
-Component    | text         | required, max 100 chars
-Allocated    | boolean      | toggled from the list, default false
-Type         | fixed values | Sensor, Actuator, Display, Microcontroller
-Project      | relation     | Digital Safe, Parking Assistant, Alarm System
-User         | relation     | the owner of the item (from week 11)
+| Field | Type | Notes |
+|---|---|---|
+| Component | text | required, max 100 chars |
+| Allocated | boolean | toggled from the list, default false |
+| Type | fixed values | Sensor, Actuator, Display, Microcontroller |
+| Project | relation | Digital Safe, Parking Assistant, Alarm System |
+| User | relation | the owner of the item (from week 11) |
 
 Sample data used across all stages:
 1. Ultrasonic Sensor HC-SR04, active, Sensor
