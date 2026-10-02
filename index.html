@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embedded Lab Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Embedded Lab Manager</h1>
+    <p>Track and allocate electronic components for practical setups.</p>
+    <p class="app-count">3 components, 2 available</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Add Component</h2>
+      <form class="item-form">
+        <label>
+          Component Name
+          <input type="text" name="title" placeholder="e.g., Ultrasonic Sensor HC-SR04" />
+        </label>
+        <label>
+          Type
+          <select name="tag">
+            <option value="sensor">Sensor</option>
+            <option value="actuator">Actuator</option>
+            <option value="display">Display</option>
+            <option value="microcontroller">Microcontroller</option>
+          </select>
+        </label>
+        <label>
+          Target Project
+          <select name="project">
+            <option value="digital-safe">Digital Safe</option>
+            <option value="parking-assistant">Parking Assistant</option>
+            <option value="general-lab">General Lab Use</option>
+          </select>
+        </label>
+        <button type="submit">Add to Inventory</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Inventory</h2>
+      <!-- <p class="empty">No components added yet.</p> -->
+      <ul class="item-list">
+        <li class="item-card">
+          <div>
+            <h3>Ultrasonic Sensor HC-SR04</h3>
+            <span class="badge badge-sensor">Sensor</span>
+          </div>
+          <span class="status">Available</span>
+        </li>
+        <li class="item-card done">
+          <div>
+            <h3>I2C LCD Display</h3>
+            <span class="badge badge-display">Display</span>
+          </div>
+          <span class="status">Allocated</span>
+        </li>
+        <li class="item-card">
+          <div>
+            <h3>Arduino Uno Board</h3>
+            <span class="badge badge-microcontroller">Microcontroller</span>
+          </div>
+          <span class="status">Available</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">Web Technologies Project</footer>
+</body>
+</html>
