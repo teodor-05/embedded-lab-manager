@@ -31,7 +31,7 @@ Open `index.html` in a browser. No build step, no server.
 ## Stage 1 Checklist
 | ID | Requirement | Where (permalink) | How to check |
 |---|---|---|---|
-| S1-R1 | README: description, fields, sample data, how to run | [README.md] (https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/README.md?plain=1#L1-L24) | read |
+| S1-R1 | README: description, fields, sample data, how to run | [README.md] (https://github.com/teodor-05/embedded-lab-manager/blob/d117001c78c303eaa698b416ffd45bbd3247eacf/README.md?plain=1#L1-L24) | read |
 | S1-R2 | AI usage section | [README.md](https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/README.md?plain=1#L17-L21) | read |
 | S1-R3 | AI log for stage 1 | [ai-log/etapa-01.md](https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/ai-log/etapa-01.md?plain=1#L1-L16) | read |
 | S1-R4 | header, form (text + select), 3 cards with own data | [index.html](https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/index.html#L1-L71) | open the page |
