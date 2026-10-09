@@ -26,7 +26,8 @@ Open `index.html` in a browser. No build step, no server.
 
 ## Status
 [x] Stage 1: static mockup
-[ ] Stage 2: data logic in JavaScript
+[x] Stage 2: data logic in JavaScript
+[ ] Stage 3: Vite and React project
 
 ## Stage 1 Checklist
 | ID | Requirement | Where (permalink) | How to check |
@@ -39,3 +40,15 @@ Open `index.html` in a browser. No build step, no server.
 | S1-R6 | 2 columns on desktop, 1 under 700px | [style.css](https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/style.css#L149-L152) | resize < 700px |
 | S1-R7 | visible focus, readable dark theme | [style.css](https://github.com/teodor-05/embedded-lab-manager/blob/068c4469025540b8b7de68b921fee3dd3d13398d/style.css#L137-L142) | Tab; dark mode |
 | S1-R8 | commit "Stage 1" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/068c4469025540b8b7de68b921fee3dd3d13398d) | commit history |
+
+
+## Stage 2 Checklist
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S2-R1 | JS file linked, logs on page load | [index.html](<permalink>) | open page, F12 |
+| S2-R2 | 3+ items with id, name, state, tag | [components.js](<permalink>) | read |
+| S2-R3 | list, count, search, add, toggle, delete | [components.js](<permalink>) | console output |
+| S2-R4 | add rejects empty name and invalid tag | [components.js](<permalink>) | last 2 console lines |
+| S2-R5 | original array unchanged after add | [components.js](<permalink>) | console line |
+| S2-R6 | README Stage 2 section + AI log | [README.md](<permalink>), [ai-log/etapa-02.md](<permalink>) | read |
+| S2-R7 | commit "Stage 2" pushed | [Commit Link](<permalink>) | commit history |
