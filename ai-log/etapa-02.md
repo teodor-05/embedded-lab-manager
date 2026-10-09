@@ -4,7 +4,7 @@
 - Gemini
 
 ## Conversations
-<link_share_conversatie> (Implementing JavaScript data logic, immutable functions and validation)
+https://share.gemini.google/fAEFUK7AwAcJ (Implementing JavaScript data logic, immutable functions and validation)
 
 ## Key requests
 ### 1. Generating Array Methods and Functions

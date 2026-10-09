@@ -29,6 +29,10 @@ Open `index.html` in a browser. No build step, no server.
 [x] Stage 2: data logic in JavaScript
 [ ] Stage 3: Vite and React project
 
+
+## Stage 2: data logic
+Plain JavaScript, no DOM. `components.js` holds the array and the functions that read and change it. Results are printed in the browser console (F12).
+
 ## Stage 1 Checklist
 | ID | Requirement | Where (permalink) | How to check |
 |---|---|---|---|
@@ -42,13 +46,14 @@ Open `index.html` in a browser. No build step, no server.
 | S1-R8 | commit "Stage 1" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/068c4469025540b8b7de68b921fee3dd3d13398d) | commit history |
 
 
+
 ## Stage 2 Checklist
 | ID | Requirement | Where (permalink) | How to check |
 |---|---|---|---|
-| S2-R1 | JS file linked, logs on page load | [index.html](<permalink>) | open page, F12 |
-| S2-R2 | 3+ items with id, name, state, tag | [components.js](<permalink>) | read |
-| S2-R3 | list, count, search, add, toggle, delete | [components.js](<permalink>) | console output |
-| S2-R4 | add rejects empty name and invalid tag | [components.js](<permalink>) | last 2 console lines |
-| S2-R5 | original array unchanged after add | [components.js](<permalink>) | console line |
-| S2-R6 | README Stage 2 section + AI log | [README.md](<permalink>), [ai-log/etapa-02.md](<permalink>) | read |
-| S2-R7 | commit "Stage 2" pushed | [Commit Link](<permalink>) | commit history |
+| S2-R1 | JS file linked, logs on page load | [index.html](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/index.html#L75) | open page, F12 |
+| S2-R2 | 3+ items with id, name, state, tag | [components.js](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/components.js#L2-L8) | read |
+| S2-R3 | list, count, search, add, toggle, delete | [components.js](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/components.js#L11-L65) | console output |
+| S2-R4 | add rejects empty name and invalid tag | [components.js](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/components.js#L31-L44) | last 2 console lines |
+| S2-R5 | original array unchanged after add | [components.js](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/components.js#L74-L76) | console line |
+| S2-R6 | README Stage 2 section + AI log | [README.md](<permalink>), [ai-log/etapa-02.md](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/ai-log/etapa-02.md?plain=1#L1-L16) | read |
+| S2-R7 | commit "Stage 2" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/23639f4da4486c64328428e4a8595e4e6bb96481) | commit history |
