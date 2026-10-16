@@ -27,7 +27,7 @@ Open `index.html` in a browser. No build step, no server.
 ## Status
 [x] Stage 1: static mockup
 [x] Stage 2: data logic in JavaScript
-[ ] Stage 3: Vite and React project
+[x] Stage 3: Vite and React project
 
 
 ## Stage 2: data logic
@@ -57,3 +57,14 @@ Plain JavaScript, no DOM. `components.js` holds the array and the functions that
 | S2-R5 | original array unchanged after add | [components.js](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/components.js#L74-L76) | console line |
 | S2-R6 | README Stage 2 section + AI log | [README.md](https://github.com/teodor-05/embedded-lab-manager/blob/b894194b66dd4cf3f3d4df2b8b70847f72e39114/README.md?plain=1#L33-L34), [ai-log/etapa-02.md](https://github.com/teodor-05/embedded-lab-manager/blob/23639f4da4486c64328428e4a8595e4e6bb96481/ai-log/etapa-02.md?plain=1#L1-L16) | read |
 | S2-R7 | commit "Stage 2" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/23639f4da4486c64328428e4a8595e4e6bb96481) | commit history |
+
+
+## Stage 3: Vite and React project
+The app now lives in `frontend/`, built with Vite. The data from stage 2
+moved into the main component; the list is still printed raw.
+
+## How to run
+cd frontend
+npm install
+npm run dev
+Then open the address printed in the terminal (http://localhost:5173).
