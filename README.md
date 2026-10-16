@@ -68,3 +68,14 @@ cd frontend
 npm install
 npm run dev
 Then open the address printed in the terminal (http://localhost:5173).
+
+## Stage 3 Checklist
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S3-R1 | npm run dev starts without errors | [frontend/package.json](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/package.json#L6-L11) | npm install, npm run dev |
+| S3-R2 | app name and counter computed from data | [frontend/src/App.jsx](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/src/App.jsx#L8-L18) | edit data, save |
+| S3-R3 | data from README, not from the example | [frontend/src/App.jsx](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/src/App.jsx#L1-L5) | compare with README |
+| S3-R4 | stage 1 styles reused | [frontend/src/App.css](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/src/App.css#L1-L28) | look at the page |
+| S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/.gitignore#L1-L14) | npm run build |
+| S3-R6 | README Stage 3 section + AI log | [README.md](<https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/README.md?plain=1#L62-L70), [ai-log/etapa-03.md](<permalink_s3_r6_ailog>) | read |
+| S3-R7 | commit "Stage 3" pushed | [Commit Link](<link_commit_stage_3>) | commit history |
