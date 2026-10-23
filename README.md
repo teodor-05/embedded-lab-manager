@@ -28,6 +28,7 @@ Open `index.html` in a browser. No build step, no server.
 [x] Stage 1: static mockup
 [x] Stage 2: data logic in JavaScript
 [x] Stage 3: Vite and React project
+[x] Stage 4: components rendered from data
 
 
 ## Stage 2: data logic
@@ -79,3 +80,9 @@ Then open the address printed in the terminal (http://localhost:5173).
 | S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/frontend/.gitignore#L1-L14) | npm run build |
 | S3-R6 | README Stage 3 section + AI log | [README.md](<https://github.com/teodor-05/embedded-lab-manager/blob/0c59d507639e26aec3a5d4b79221cf589153e921/README.md?plain=1#L62-L70), [ai-log/etapa-03.md](https://github.com/teodor-05/embedded-lab-manager/blob/830a3c296bd031f723225fa4e41a694bea8be3f7/ai-log/etapa-03.md?plain=1#L1-L16) | read |
 | S3-R7 | commit "Stage 3" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/0c59d507639e26aec3a5d4b79221cf589153e921) | commit history |
+
+
+## Stage 4: components
+The list is rendered from the data, through two components:
+`ComponentList` receives the whole array and renders one card per item.
+`ComponentCard` receives a single item through props and displays it.

@@ -1,3 +1,5 @@
+import ComponentList from "./components/ComponentList.jsx";
+
 const components = [
   { id: 1, name: "Ultrasonic Sensor HC-SR04", allocated: false, type: "Sensor", project: "General Lab Use" },
   { id: 2, name: "I2C LCD Display", allocated: true, type: "Display", project: "Digital Safe" },
@@ -20,8 +22,7 @@ export default function App() {
       <main className="container">
         <section className="panel">
           <h2>Inventory</h2>
-          {/* Temporar: date brute; componentele apar în Etapa 4 */}
-          <pre>{JSON.stringify(components, null, 2)}</pre>
+          <ComponentList items={components} />
         </section>
       </main>
     </>

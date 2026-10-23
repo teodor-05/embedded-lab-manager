@@ -1,4 +1,4 @@
-Stage 3: AI log
+# Stage 3: AI log
 
 ## Tools
 - Gemini
