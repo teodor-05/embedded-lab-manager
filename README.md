@@ -86,3 +86,15 @@ Then open the address printed in the terminal (http://localhost:5173).
 The list is rendered from the data, through two components:
 `ComponentList` receives the whole array and renders one card per item.
 `ComponentCard` receives a single item through props and displays it.
+
+
+## Stage 4 Checklist
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S4-R1 | 2+ components in src/components/ | [frontend/src/components/] https://github.com/teodor-05/embedded-lab-manager/tree/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components | open folder |
+| S4-R2 | card receives data through props | [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components/ComponentCard.jsx#L9-L21 | read |
+| S4-R3 | map + key={id}, no console warnings | [ComponentList.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components/ComponentList.jsx#L12-L13 | F12, Console |
+| S4-R4 | message for empty list | [ComponentList.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components/ComponentList.jsx#L5-L7 | set array to [] |
+| S4-R5 | state changes the card look | [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components/ComponentCard.jsx#L11 | toggle a done flag |
+| S4-R6 | README Stage 4 section + AI log | [README.md] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/README.md?plain=1#L85-L88, [ai-log/etapa-04.md] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/ai-log/etapa-04.md?plain=1#L1-L16 | read |
+| S4-R7 | commit "Stage 4" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0 | commit history |
