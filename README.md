@@ -99,3 +99,19 @@ The list is rendered from the data, through two components:
 | S4-R5 | state changes the card look | [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/frontend/src/components/ComponentCard.jsx#L11 | toggle a done flag |
 | S4-R6 | README Stage 4 section + AI log | [README.md] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/README.md?plain=1#L85-L88, [ai-log/etapa-04.md] https://github.com/teodor-05/embedded-lab-manager/blob/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0/ai-log/etapa-04.md?plain=1#L1-L16 | read |
 | S4-R7 | commit "Stage 4" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/87feb7c4ddfc5b9e7cfdaa601dd0e6e28cbafef0 | commit history |
+
+
+## Stage 5: local state and events
+The list lives in React state. Checking and deleting work from the page, and the counters in the header follow automatically. A button in the header switches between light and dark mode. Changes are lost on refresh.
+
+## Stage 5 Checklist
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S5-R1 | list kept in useState, in App | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L15 | read |
+| S5-R2 | toggling changes state and card look | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L18-L22, [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/components/ComponentCard.jsx#L13-L16 | click a checkbox |
+| S5-R3 | delete removes the item | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L24-L26, [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/components/ComponentCard.jsx#L25-L31 | click Delete |
+| S5-R4 | header counter derived, not in state | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L34 | toggle, watch header |
+| S5-R5 | immutable updates (no push, splice, assignment) | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L18-L26 | read |
+| S5-R6 | light/dark toggle: state + data-theme on html | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L28-L32, [App.css] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.css#L201-L214 | click the button, both system themes |
+| S5-R7 | no console warnings; README + AI log | [README.md](<permalink_s5_r7_readme>), [ai-log/etapa-05.md](<permalink_s5_r7_ailog>) | F12, Console |
+| S5-R8 | commit "Stage 5" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/526a109df483aaac17568ce376a658d75e4ce082 | commit history |
