@@ -1,19 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ComponentList from "./components/ComponentList.jsx";
-
-const INITIAL_COMPONENTS = [
-  { id: 1, name: "Ultrasonic Sensor HC-SR04", allocated: false, type: "Sensor", project: "General Lab Use" },
-  { id: 2, name: "I2C LCD Display", allocated: true, type: "Display", project: "Digital Safe" },
-  { id: 3, name: "Arduino Uno Board", allocated: false, type: "Microcontroller", project: "General Lab Use" },
-];
+import { fetchComponents } from "./api.js";
 
 function initialTheme() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 export default function App() {
-  const [components, setComponents] = useState(INITIAL_COMPONENTS);
+  // State for components, loading, and errors
+  const [components, setComponents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
   const [theme, setTheme] = useState(initialTheme);
+
+  // Fetch data on mount
+  useEffect(() => {
+    let ignore = false;
+    
+    async function load() {
+      try {
+        const data = await fetchComponents();
+        if (!ignore) setComponents(data);
+      } catch (err) {
+        if (!ignore) setError(err.message);
+      } finally {
+        if (!ignore) setLoading(false);
+      }
+    }
+    
+    load();
+    return () => { ignore = true; };
+  }, []);
 
   function handleToggle(id) {
     setComponents((prev) =>
@@ -54,11 +72,22 @@ export default function App() {
       <main className="container">
         <section className="panel">
           <h2>Inventory</h2>
-          <ComponentList 
-            items={components} 
-            onToggle={handleToggle} 
-            onDelete={handleDelete} 
-          />
+          
+          {loading && <p className="info">Loading inventory...</p>}
+          
+          {error && (
+            <p className="error">
+              Could not load data: {error}. Are you running <code>npm run api</code>?
+            </p>
+          )}
+          
+          {!loading && !error && (
+            <ComponentList 
+              items={components} 
+              onToggle={handleToggle} 
+              onDelete={handleDelete} 
+            />
+          )}
         </section>
       </main>
     </>

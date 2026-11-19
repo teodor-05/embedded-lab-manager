@@ -14,6 +14,9 @@
   --color-actuator: #f59e0b;
   --color-display: #6366f1;
   --color-microcontroller: #ef4444;
+
+  --error-bg: #fee2e2;
+  --error-border: #f87171;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +27,9 @@
     --muted: #94a3b8;
     --border: #334155;
     --accent-soft: #1e3a5f;
+
+    --error-bg: #450a0a;
+    --error-border: #991b1b;
   }
 }
 
@@ -34,6 +40,9 @@
     --muted: #94a3b8;
     --border: #334155;
     --accent-soft: #1e3a5f;
+
+    --error-bg: #450a0a;
+    --error-border: #991b1b;
 }
 
 body {
@@ -212,3 +221,14 @@ ul.item-list {
   cursor: pointer;
 }
 .theme-toggle:hover { background: rgba(255, 255, 255, 0.15); }
+
+
+/* Stage 6: loading and error states */
+.info { color: var(--muted); }
+.error {
+  color: var(--color-microcontroller);
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+}

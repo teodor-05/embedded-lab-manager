@@ -1,0 +1,9 @@
+{
+  "components": [
+    { "id": 1, "name": "Ultrasonic Sensor HC-SR04", "allocated": false, "type": "Sensor", "project": "General Lab Use" },
+    { "id": 2, "name": "I2C LCD Display", "allocated": true, "type": "Display", "project": "Digital Safe" },
+    { "id": 3, "name": "Arduino Uno Board", "allocated": false, "type": "Microcontroller", "project": "General Lab Use" },
+    { "id": 4, "name": "Servo Motor SG90", "allocated": true, "type": "Actuator", "project": "Smart Door Lock" },
+    { "id": 5, "name": "Raspberry Pi 4", "allocated": false, "type": "Microcontroller", "project": "Vision System" }
+  ]
+}
