@@ -127,10 +127,10 @@ To run the project, open two terminals:
 ## Stage 6 Checklist
 | ID | Requirement | Where (permalink) | How to check |
 |---|---|---|---|
-| S6-R1 | npm run api starts, route shows JSON | [package.json] https://github.com/teodor-05/embedded-lab-manager/blob/8465d52521255ca0422ad6faf38768ed1d1d4cdd/frontend/package.json#L11, [db.json](<permalink_s6_r1_db>) | open localhost:3001/components |
-| S6-R2 | data no longer in React code | [App.jsx](<permalink_s6_r2>) | read |
-| S6-R3 | loading message while waiting | [App.jsx](<permalink_s6_r3>) | --delay 4000 |
-| S6-R4 | error message when API is down | [App.jsx](<permalink_s6_r4>) | stop npm run api, refresh |
-| S6-R5 | fetch only in api.js, URL from env | [api.js](<permalink_s6_r5_api>), [.env.example](<permalink_s6_r5_env>) | search for fetch |
-| S6-R6 | README Stage 6 section + AI log | [README.md](<permalink_s6_r6_readme>), [ai-log/etapa-06.md](<permalink_s6_r6_ailog>) | read |
-| S6-R7 | commit "Stage 6" pushed | [Commit Link](<link_commit_stage_6>) | commit history |
+| S6-R1 | npm run api starts, route shows JSON | [package.json] https://github.com/teodor-05/embedded-lab-manager/blob/8465d52521255ca0422ad6faf38768ed1d1d4cdd/frontend/package.json#L11, [db.json] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/db.json#L1-L9 | open localhost:3001/components |
+| S6-R2 | data no longer in React code | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/src/App.jsx#L11 | read |
+| S6-R3 | loading message while waiting | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/src/App.jsx#L76 | --delay 4000 |
+| S6-R4 | error message when API is down | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/src/App.jsx#L78-L82 | stop npm run api, refresh |
+| S6-R5 | fetch only in api.js, URL from env | [api.js] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/src/api.js#L4, [.env.example] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/.env.example#L2 | search for fetch |
+| S6-R6 | README Stage 6 section + AI log | [README.md] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/README.md?plain=1#L120-L125, [ai-log/etapa-06.md] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/ai-log/etapa-06.md?plain=1#L1-L21 | read |
+| S6-R7 | commit "Stage 6" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/9ffe5a5219e194122702e1232821cfe2fb1ea4d5 | commit history |
