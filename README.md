@@ -30,10 +30,8 @@ Open `index.html` in a browser. No build step, no server.
 [x] Stage 3: Vite and React project
 [x] Stage 4: components rendered from data
 [x] Stage 5: local state and events
+[x] Stage 6: data from a mock API
 
-
-## Stage 2: data logic
-Plain JavaScript, no DOM. `components.js` holds the array and the functions that read and change it. Results are printed in the browser console (F12).
 
 ## Stage 1 Checklist
 | ID | Requirement | Where (permalink) | How to check |
@@ -48,6 +46,8 @@ Plain JavaScript, no DOM. `components.js` holds the array and the functions that
 | S1-R8 | commit "Stage 1" pushed | [Commit Link](https://github.com/teodor-05/embedded-lab-manager/commit/068c4469025540b8b7de68b921fee3dd3d13398d) | commit history |
 
 
+## Stage 2: data logic
+Plain JavaScript, no DOM. `components.js` holds the array and the functions that read and change it. Results are printed in the browser console (F12).
 
 ## Stage 2 Checklist
 | ID | Requirement | Where (permalink) | How to check |
@@ -115,3 +115,11 @@ The list lives in React state. Checking and deleting work from the page, and the
 | S5-R6 | light/dark toggle: state + data-theme on html | [App.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.jsx#L28-L32, [App.css] https://github.com/teodor-05/embedded-lab-manager/blob/526a109df483aaac17568ce376a658d75e4ce082/frontend/src/App.css#L201-L214 | click the button, both system themes |
 | S5-R7 | no console warnings; README + AI log | [README.md]https://github.com/teodor-05/embedded-lab-manager/blob/a2d7b50525091c694dedb7805bb47bceda050665/README.md?plain=1#L104-L105, [ai-log/etapa-05.md] https://github.com/teodor-05/embedded-lab-manager/blob/a2d7b50525091c694dedb7805bb47bceda050665/ai-log/etapa-05.md?plain=1#L1-L16 | F12, Console |
 | S5-R8 | commit "Stage 5" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/526a109df483aaac17568ce376a658d75e4ce082 | commit history |
+
+
+## Stage 6: data from a mock API
+The components list is served by json-server from `db.json`. The app fetches it on load and shows a loading state and an error state. 
+
+To run the project, open two terminals:
+`npm run dev` # terminal 1, http://localhost:5173
+`npm run api` # terminal 2, http://localhost:3001
