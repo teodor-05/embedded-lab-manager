@@ -1,0 +1,6 @@
+{
+  "resource": "components",
+  "title": "name",
+  "done": "allocated",
+  "sample": { "type": "Microcontroller", "project": "Vision System" }
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ComponentList from "./components/ComponentList.jsx";
-import { fetchComponents } from "./api.js";
+import ComponentForm from "./components/ComponentForm.jsx";
+import { fetchComponents, createComponent, updateComponent, deleteComponent } from "./api.js";
 
 function initialTheme() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -33,14 +34,29 @@ export default function App() {
     return () => { ignore = true; };
   }, []);
 
-  function handleToggle(id) {
-    setComponents((prev) =>
-      prev.map((c) => (c.id === id ? { ...c, allocated: !c.allocated } : c))
-    );
+  // API calls for Create, Update, Delete
+  async function handleAdd(component) {
+    const saved = await createComponent(component);
+    setComponents((prev) => [...prev, saved]);
   }
 
-  function handleDelete(id) {
-    setComponents((prev) => prev.filter((c) => c.id !== id));
+  async function handleToggle(id) {
+    const item = components.find((c) => c.id === id);
+    try {
+      const updated = await updateComponent(id, { allocated: !item.allocated });
+      setComponents((prev) => prev.map((c) => (c.id === id ? updated : c)));
+    } catch (err) {
+      setError(err.message);
+    }
+  }
+
+  async function handleDelete(id) {
+    try {
+      await deleteComponent(id);
+      setComponents((prev) => prev.filter((c) => c.id !== id));
+    } catch (err) {
+      setError(err.message);
+    }
   }
 
   function handleTheme() {
@@ -70,18 +86,25 @@ export default function App() {
       </header>
 
       <main className="container">
+        {/* Etapa 7: Panoul pentru formularul de adăugare */}
+        <section className="panel">
+          <h2>Add Component</h2>
+          <ComponentForm onAdd={handleAdd} />
+        </section>
+
         <section className="panel">
           <h2>Inventory</h2>
           
-          {loading && <p className="info">Loading inventory...</p>}
+          {loading && <p className="info" data-testid="loading">Loading inventory...</p>}
           
           {error && (
-            <p className="error">
+            <p className="error" data-testid="error">
               Could not load data: {error}. Are you running <code>npm run api</code>?
             </p>
           )}
           
-          {!loading && !error && (
+          {/* List renders even if there is an error during toggle/delete */}
+          {!loading && (
             <ComponentList 
               items={components} 
               onToggle={handleToggle} 

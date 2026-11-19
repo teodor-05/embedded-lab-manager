@@ -31,6 +31,7 @@ Open `index.html` in a browser. No build step, no server.
 [x] Stage 4: components rendered from data
 [x] Stage 5: local state and events
 [x] Stage 6: data from a mock API
+[x] Stage 7: form and validation
 
 
 ## Stage 1 Checklist
@@ -134,3 +135,7 @@ To run the project, open two terminals:
 | S6-R5 | fetch only in api.js, URL from env | [api.js] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/src/api.js#L4, [.env.example] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/frontend/.env.example#L2 | search for fetch |
 | S6-R6 | README Stage 6 section + AI log | [README.md] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/README.md?plain=1#L120-L125, [ai-log/etapa-06.md] https://github.com/teodor-05/embedded-lab-manager/blob/9ffe5a5219e194122702e1232821cfe2fb1ea4d5/ai-log/etapa-06.md?plain=1#L1-L21 | read |
 | S6-R7 | commit "Stage 6" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/9ffe5a5219e194122702e1232821cfe2fb1ea4d5 | commit history |
+
+
+## Stage 7: form and validation
+Components can be added from the page. The form is controlled and validated, and every change (add, toggle, delete) goes to the API before it shows up in the list.

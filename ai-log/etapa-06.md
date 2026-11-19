@@ -4,7 +4,7 @@
 - Gemini
 
 ## Conversations
-<link_share_conversatie> (Moving data to a mock API and fetching with useEffect)
+https://share.gemini.google/wqVIwOTE8k1q (Moving data to a mock API and fetching with useEffect)
 
 ## Key requests
 ### 1. Setting up json-server and fetch logic
