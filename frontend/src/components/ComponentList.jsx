@@ -1,4 +1,5 @@
 import ComponentCard from "./ComponentCard.jsx";
+import styles from "./ComponentList.module.css";
 
 export default function ComponentList({ items, onToggle, onDelete }) {
   if (items.length === 0) {
@@ -6,14 +7,9 @@ export default function ComponentList({ items, onToggle, onDelete }) {
   }
 
   return (
-    <ul className="item-list">
+    <ul className={styles.list}>
       {items.map((item) => (
-        <ComponentCard 
-          key={item.id} 
-          item={item} 
-          onToggle={onToggle} 
-          onDelete={onDelete} 
-        />
+        <ComponentCard key={item.id} item={item} onToggle={onToggle} onDelete={onDelete} />
       ))}
     </ul>
   );

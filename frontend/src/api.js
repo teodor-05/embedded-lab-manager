@@ -28,3 +28,7 @@ export function updateComponent(id, changes) {
 export function deleteComponent(id) {
   return request(`/components/${id}`, { method: "DELETE" });
 }
+
+export function fetchComponent(id) {
+  return request(`/components/${id}`);
+}

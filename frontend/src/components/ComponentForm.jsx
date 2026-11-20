@@ -1,11 +1,6 @@
 import { useState } from "react";
-
-const TYPES = [
-  { value: "Sensor", label: "Sensor" },
-  { value: "Actuator", label: "Actuator" },
-  { value: "Display", label: "Display" },
-  { value: "Microcontroller", label: "Microcontroller" },
-];
+import { TYPES } from "../constants.js";
+import styles from "./ComponentForm.module.css";
 
 const MAX_NAME_LENGTH = 100;
 
@@ -52,7 +47,7 @@ export default function ComponentForm({ onAdd }) {
   }
 
   return (
-    <form className="item-form" onSubmit={handleSubmit} noValidate data-testid="form">
+    <form className={styles.form} onSubmit={handleSubmit} noValidate data-testid="form">
       <label>
         Component Name
         <input
@@ -92,7 +87,7 @@ export default function ComponentForm({ onAdd }) {
 
       {error && <p className="error" data-testid="form-error">{error}</p>}
 
-      <button type="submit" disabled={isSending} data-testid="form-submit">
+      <button type="submit" disabled={isSending} data-testid="form-submit" className="btn">
         {isSending ? "Saving..." : "Add Component"}
       </button>
     </form>

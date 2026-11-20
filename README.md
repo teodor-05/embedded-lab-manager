@@ -32,6 +32,7 @@ Open `index.html` in a browser. No build step, no server.
 [x] Stage 5: local state and events
 [x] Stage 6: data from a mock API
 [x] Stage 7: form and validation
+[x] Stage 8: routing and detail page
 
 
 ## Stage 1 Checklist
@@ -152,3 +153,7 @@ Components can be added from the page. The form is controlled and validated, and
 | S7-R6 | tw.json and the data-testid attributes from table 7.3 | [tw.json] https://github.com/teodor-05/embedded-lab-manager/blob/9095ec0fbeb5a42792d1d07ba55f9187c4e44b8e/tw.json#L1-L6, [ComponentCard.jsx] https://github.com/teodor-05/embedded-lab-manager/blob/9095ec0fbeb5a42792d1d07ba55f9187c4e44b8e/frontend/src/components/ComponentCard.jsx#L10 | querySelectorAll in the console |
 | S7-R7 | README Stage 7 section + AI log | [README.md] https://github.com/teodor-05/embedded-lab-manager/blob/9095ec0fbeb5a42792d1d07ba55f9187c4e44b8e/README.md?plain=1#L140-L141, [ai-log/etapa-07.md] https://github.com/teodor-05/embedded-lab-manager/blob/9095ec0fbeb5a42792d1d07ba55f9187c4e44b8e/ai-log/etapa-07.md?plain=1#L1-L26 | read |
 | S7-R8 | commit "Stage 7" pushed | [Commit Link] https://github.com/teodor-05/embedded-lab-manager/commit/9095ec0fbeb5a42792d1d07ba55f9187c4e44b8e | commit history |
+
+
+## Stage 8: routing and detail page
+Three pages behind React Router: the list, a detail page at `/components/:id`, and an about page, plus a 404 page. Component styles moved to CSS Modules.
